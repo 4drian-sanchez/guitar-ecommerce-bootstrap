@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitarLA | Producto</title>
+    <link rel="icon" href="./build/img/favicon-16x16.png" type="image/png" />
+    <link rel="stylesheet" href="./build/css/app.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/imgsupport.js" defer></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header py-3 bg-dark overflow-hidden">
+      <div class="container">
+        <!-- ROW -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-9 col-md-3">
+            <a href="./index.html">
+              <img
+                src="./build/img/logo.svg"
+                alt="Logo de GuitarLA"
+                title="Logo de GuitarLA"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <nav
+            class="col-md-9 mt-3 mt-md-0 d-flex flex-column flex-md-row align-items-center justify-content-md-end header-nav"
+          >
+            <a href="./index.html" class="py-1 px-3 d-block">Inicio</a>
+            <a href="./nosotros.html" class="py-1 px-3 d-block">Nosotros</a>
+            <a href="./blog.html" class="py-1 px-3 d-block">Blog</a>
+            <a href="./tienda.html" class="py-1 px-3 d-block">Tienda</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-4">
+      <div class="row justify-content-center m-0">
+        <div class="col-md-8 col-lg-6">
+          <div class="row m-0 align-items-center">
+            <div class="col-4" id="imagen-producto"></div>
+            <div class="col-8" id="imagen-contenido">
+              <h1 class="producto-title text-black fw-normal fs-3"></h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                necessitatibus, sequi itaque esse excepturi aliquam laudantium
+                et sed cumque incidunt ea amet enim mollitia unde praesentium,
+                error culpa dolore voluptas.
+              </p>
+              <p class="text-primary fs-3 fw-black">$299</p>
+
+              <form>
+                <div class="form-group">
+                  <label for="cantidad" class="form-label fs-5">Catidad</label>
+                  <select name="cantidad" id="cantidad" class="form-control">
+                    <option disabled selected>-- Seleccione --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+
+                <button
+                  class="btn btn-primary w-100 text-white mt-3 text-uppercase fw-bold"
+                >
+                  Agregar al carrito
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark py-3 px-1">
+      <p class="text-white text-center text-md-end me-md-4">
+        Todos los derechos Reservados
+      </p>
+    </footer>
+  </body>
+</html>
